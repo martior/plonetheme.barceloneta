@@ -3348,7 +3348,8 @@ a.link-category:focus {
 #category li {
   display: inline-block;
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:before,
+.plone-modal-body [class*="contenttype-"]:before {
   font-family: "Fontello";
   font-size: 100%;
   padding: 0;
@@ -3362,29 +3363,51 @@ body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:befo
   text-align: center;
   margin-right: 6px;
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-folder:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-folder:before,
+.plone-modal-body .contenttype-folder:before {
   content: '\e801';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-document:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-document:before,
+.plone-modal-body .contenttype-document:before {
   content: '\e80e';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-file:before {
-  content: '\e811';
-}
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-link:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-link:before,
+.plone-modal-body .contenttype-link:before {
   content: '\e806';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-image:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-image:before,
+.plone-modal-body .contenttype-image:before {
   content: '\e810';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-collection:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-collection:before,
+.plone-modal-body .contenttype-collection:before {
   content: '\e808';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-event:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-event:before,
+.plone-modal-body .contenttype-event:before {
   content: '\e809';
 }
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:before {
+body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:before,
+.plone-modal-body .contenttype-news-item:before {
   content: '\e80f';
+}
+.contenttype-file #crud-edit-File-widgets-view_title:before {
+  content: '\e811';
+  font-family: "Fontello";
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: inherit;
+  display: inline-block;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 6px;
+}
+.mime-icon {
+  margin-right: 8px;
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
   padding: 5px 15px 5px 50px;
@@ -3413,9 +3436,6 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-folder:after {
 }
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-document:after {
   content: '\e80e';
-}
-body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-file:after {
-  content: '\e811';
 }
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-link:after {
   content: '\e806';

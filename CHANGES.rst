@@ -44,6 +44,10 @@ Bug fixes:
   Fixes an issue, where list elements in an inline TinyMCE content area were displayed wrong.
   [thet]
 
+- remove paperclip fontello icon for file types (is being replaced by mimetype icons
+  fix icons in select default page pop up
+  https://github.com/plone/Products.CMFPlone/issues/1734 [fgrcon]
+  
 - Fix buttons alignment in ordered selection widget
   [ale-rt]
 
